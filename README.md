@@ -7,3 +7,5 @@ Use your mouse to hover over pixels and paint them blue!
 Clear - reset the board
 
 Change size - change the amount of pixels per side
+
+Change color - change the paint color //NEW!

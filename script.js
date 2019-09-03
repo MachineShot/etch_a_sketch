@@ -1,5 +1,7 @@
 let container = document.getElementById("container");
 
+let answer = 'blue';
+
 createGrid(16);
 
 function createGrid(num){
@@ -41,7 +43,18 @@ function changeSize(){
 }
 
 function changeColor(){
-    this.style.backgroundColor = "blue";
+    this.style.backgroundColor = answer;
+}
+
+function changePrimaryColor(){
+    let option = prompt('Choose blue, green or yellow');
+    
+    if(answer == 'blue' || answer == 'green' || answer == 'yellow'){
+        answer = option;
+    }
+    else{
+        changePrimaryColor();
+    }
 }
 
 let blocks = document.getElementsByClassName("blocks");
